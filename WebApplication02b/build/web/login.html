@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link tới CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>HTML Forms</h1>
+        <form action="action" method="get">
+            <label>Textbox: <input type="text" name="txtText" size="5"></label> <br>
+
+            <label>Password: <input type="password" name="txtpassword"></label> <br>
+
+            <input type="hidden" name="txthidden" value="hidden_value"> <br>
+
+            <label><input type="checkbox" name="chkbox" checked> Male</label> <br>
+
+            <div class="radio-group">
+                <label>Status:</label><br>
+                <label><input type="radio" name="rdoStastus" value="Single" checked> Single</label><br>
+                <label><input type="radio" name="rdoStastus" value="Maried"> Married</label><br>
+                <label><input type="radio" name="rdoStastus" value="Divorsed"> Divorced</label><br>
+            </div>
+
+            <label>Combobox:
+                <select name="txtcombo">
+                    <option value="Servlet">JSP and Servlet</option>
+                    <option value="EJB">EJB</option>
+                </select>
+            </label> <br>
+
+            <label>Multiple:
+                <select name="txtcombo" multiple>
+                    <option value="Servlet">JSP and Servlet</option>
+                    <option value="EJB">EJB</option>
+                    <option value="Java">Code Java</option>
+                </select>
+            </label> <br>
+
+            <label>Textarea:
+                <textarea name="txtArea" rows="4" cols="30">This form parameters demo!!</textarea>
+            </label> <br>
+
+            <input type="submit" name="txtB" value="Submit"> 
+            <input type="submit" name="action" value="Register">
+            <input type="reset" value="Reset">
+            <input type="button" value="JavaScript" onclick="">
+        </form>
+    </div>
+</body>
+</html>
